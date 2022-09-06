@@ -5797,7 +5797,7 @@ spec:
   template:
     metadata:
       annotations:
-        cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
       labels:
         app: activator
         role: activator
