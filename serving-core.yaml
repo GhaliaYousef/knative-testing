@@ -5796,8 +5796,8 @@ spec:
       role: activator
   template:
     metadata:
-      # annotations:
-      #   cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
       labels:
         app: activator
         role: activator
@@ -5953,8 +5953,8 @@ spec:
       maxUnavailable: 0
   template:
     metadata:
-      # annotations:
-      #   cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
       labels:
         app: autoscaler
         app.kubernetes.io/component: autoscaler
@@ -6088,8 +6088,8 @@ spec:
       app: controller
   template:
     metadata:
-      # annotations:
-      #   cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
       labels:
         app: controller
         app.kubernetes.io/component: controller
@@ -6201,8 +6201,8 @@ spec:
       app: domain-mapping
   template:
     metadata:
-      # annotations:
-      #   cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
       labels:
         app: domain-mapping
         app.kubernetes.io/component: domain-mapping
@@ -6289,8 +6289,8 @@ spec:
       role: domainmapping-webhook
   template:
     metadata:
-      # annotations:
-      #   cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
       labels:
         app: domainmapping-webhook
         role: domainmapping-webhook
@@ -6488,8 +6488,8 @@ spec:
       role: webhook
   template:
     metadata:
-      # annotations:
-      #   cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
       labels:
         app: webhook
         role: webhook
