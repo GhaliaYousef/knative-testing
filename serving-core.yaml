@@ -5806,6 +5806,7 @@ spec:
         app.kubernetes.io/version: "1.7.1"
     spec:
       serviceAccountName: controller
+      automountServiceAccountToken: false
       containers:
         - name: activator
           # This is the Go import path for the binary that is containerized
@@ -5971,6 +5972,7 @@ spec:
                 topologyKey: kubernetes.io/hostname
               weight: 100
       serviceAccountName: controller
+      automountServiceAccountToken: false
       containers:
         - name: autoscaler
           # This is the Go import path for the binary that is containerized
@@ -6105,6 +6107,7 @@ spec:
                 topologyKey: kubernetes.io/hostname
               weight: 100
       serviceAccountName: controller
+      automountServiceAccountToken: false
       containers:
         - name: controller
           # This is the Go import path for the binary that is containerized
@@ -6217,6 +6220,7 @@ spec:
                 topologyKey: kubernetes.io/hostname
               weight: 100
       serviceAccountName: controller
+      automountServiceAccountToken: false
       containers:
         - name: domain-mapping
           # This is the Go import path for the binary that is containerized
@@ -6305,6 +6309,7 @@ spec:
                 topologyKey: kubernetes.io/hostname
               weight: 100
       serviceAccountName: controller
+      automountServiceAccountToken: false
       containers:
         - name: domainmapping-webhook
           # This is the Go import path for the binary that is containerized
@@ -6502,6 +6507,7 @@ spec:
                 topologyKey: kubernetes.io/hostname
               weight: 100
       serviceAccountName: controller
+      automountServiceAccountToken: false
       containers:
         - name: webhook
           # This is the Go import path for the binary that is containerized
