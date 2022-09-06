@@ -5806,6 +5806,8 @@ spec:
         app.kubernetes.io/version: "1.7.1"
     spec:
       serviceAccountName: controller
+      automountServiceAccountToken: false
+
       containers:
         - name: activator
           # This is the Go import path for the binary that is containerized
