@@ -5876,7 +5876,7 @@ spec:
                   value: "activator"
             periodSeconds: 20
             failureThreshold: 24
-            initialDelaySeconds: 30
+            initialDelaySeconds: 100
       # The activator (often) sits on the dataplane, and may proxy long (e.g.
       # streaming, websockets) requests.  We give a long grace period for the
       # activator to "lame duck" and drain outstanding requests before we
